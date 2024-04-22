@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surah Yaseen❤️</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+25&family=Sedan:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styels.css">
+</head>
+<body>
+    <nav>
+        <p>Wae <span  class="title waveform-text">FATIMA💞</span> Ujju hai silcha</p>
+        <p>Thank You in Advance</p>
+       
+    </nav>
+    <div class="container">
+        <div><span id="text">In the Name of ALLAH  the Most Compassionate, Most Merciful.</span></div>
+      <% surahYaseen.forEach(surah =>{ %>
+        <div class="card">
+            <div class="video-container">
+                <iframe webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen="true" src=<%= surah.videoUrl %>></iframe>
+           
+            </div>
+            <div class="sequence"><%= surah.lecture  %></div>
+            <div class="aayat"><%= surah.ayat %> </div>
+        </div>
+     <% }) %>
+       
+       
+    </div>
+    
+
+</body>
+</html>
